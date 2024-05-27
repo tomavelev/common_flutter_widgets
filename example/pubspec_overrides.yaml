@@ -1,0 +1,4 @@
+# melos_managed_dependency_overrides: common_flutter_widgets
+dependency_overrides:
+  common_flutter_widgets:
+    path: ..
