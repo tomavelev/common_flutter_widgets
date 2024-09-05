@@ -38,6 +38,34 @@ TODO: Tell users more about the package: where to find more information, how to
 contribute to the package, how to file issues, what response they can expect
 from the package authors, and more.
 -->
+## Getting started:
+
+pubspec.yaml:
+```
+  common_flutter_widgets:
+    git: https://github.com/tomavelev/common_flutter_widgets.git
+```
+
+
+//hello world:
+```
+  @override
+  Widget build(BuildContext context) => CApp(
+        home: CScaffold(
+            body: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              CInkWell(
+                child: const Text("data"),
+                onPressed: () {},
+              ),
+            ],
+          ),
+        )),
+      );
+```
 
 ## Common Abstraction over Material and Cupertino widgets
 
